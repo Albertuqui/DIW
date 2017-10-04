@@ -1,0 +1,29 @@
+* {
+  color:darkblue;
+  font-family: Verdana;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80px;
+  word-break: break-all;
+  word-wrap: break-word;
+
+}
+
+p {
+  text-indent: 1cm;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
