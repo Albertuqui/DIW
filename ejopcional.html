@@ -4,29 +4,26 @@
     <meta charset="utf-8">
     <title>Ejercicio opcional</title>
     <style type="text/css">
-p{
-  color:black;
-}
-:not(p){
-  color:red;
-}
+p{color:black}
+:not(p){color:red}
 p::first-letter{font-family: fantasy; font-weight: bold; font-size:  30px}
-p.primero::after {content:"."; font-weight: bold; color:blue; font-size: 20px}
-input:checked {height: 20px;  width: 30px}
-input:enabled[type="text"] {
-  background-color: yellow;
-}
-input:focus[type="text"] {
-  background-color: aqua;
-}
-article img{
-  height: 100px;
-  width: 100px;
-  float:left;
-}
-[title~=css] {
-border: 5px solid red;
-}
+p::after {content:"."; font-weight: bold; color:blue; font-size: 20px}
+input:checked {height: 20px;  width: 30px }
+input {background-color: yellow}
+input:enabled[type="text"] {background-color: yellow}
+input:focus[type="text"]  {background-color: aqua}
+input:focus[type="email"]  {background-color: aqua}
+article img{height: 100px; width: 100px; float:left}
+[title~=css] {border: 2px solid red}
+article table.tabla1 {text-align: center; border:3px solid black}
+table.tabla1 td:nth-child(odd){background-color: aquamarine}
+table.tabla1 td:nth-child(even){background-color: lavender}
+table.tabla1 tr:first-of-type td{font-weight: bold;background-color: gold}
+a:link {color: blue}
+a:active {background-color: yellow}
+a:visited {color: brown}
+a:hover {color: grey; font-weight: bold}
+
 
     </style>
   </head>
@@ -36,27 +33,70 @@ border: 5px solid red;
       <br>
     </header>
     <section>
-      <article>
+      <article class="parrafos">
         <img src="css.jpg" title="imagen css">
         <p class="primero">  CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los documentos electrónicos definidos con HTML y XHTML.
-        CSS es la mejor forma de separar los contenidos y su presentación y es imprescindible para crear páginas web complejas </p>
+        CSS es la mejor forma de separar los contenidos y su presentación y es imprescindible para crear páginas web complejas</p>
         <p class="segundo"> Separar la definición de los contenidos y la definición de su aspecto presenta numerosas ventajas,
-           ya que obliga a crear documentos HTML/XHTML bien definidos y con significado completo (también llamados "documentos semánticos").
-         Además, mejora la accesibilidad del documento, reduce la complejidad de su mantenimiento y permite visualizar el mismo documento en infinidad de dispositivos diferentes.</p>
+           ya que obliga a crear documentos HTML/XHTML bien definidos y con significado completo (también llamados "documentos semánticos")
+         Además, mejora la accesibilidad del documento, reduce la complejidad de su mantenimiento y permite visualizar el mismo documento en infinidad de dispositivos diferentes</p>
+         <p class="tercero"> Al crear una página web, se utiliza en primer lugar el lenguaje HTML/XHTML para marcar los contenidos, es decir, para designar la función de cada elemento dentro de la página: párrafo, titular, texto destacado, tabla, lista de elementos, etc</p>
       </article>
+      <article>
+        <table align="center" class="tabla1">
+          <tr>
+            <td> Elementos </td>
+            <td> Descripción </td>
+          </tr>
+          <tr>
+            <td> Selector de elemento (llamado algunas veces selector de etiqueta o tipo) </td>
+            <td> Todos los elementos HTML del tipo especificado. </td>
+          </tr>
+          <tr>
+            <td> Selector de identificación (ID) </td>
+            <td> El elemento en la página con el ID especificado  (en una página HTML dada, solo se permite un unico elemento por ID). </td>
+          </tr>
+          <tr>
+            <td> Selector de Clase </td>
+            <td> Los elementos en la página con la clase especificada (una clase puede aparecer varias veces en una página). </td>
+          </tr>
+          <tr>
+            <td> Selector de atributo </td>
+            <td> Los elementos en una página con el atributo especificado. </td>
+          </tr>
+          <tr>
+            <td> Selector de Pseudo-clase </td>
+            <td> Los elementos especificados, pero solo cuando esté en el estado especificado, por ejemplo cuando el puntero esté sobre él. </td>
+          </tr>
+        </table>
+        <br>
+        <a href="http://librosweb.es/libro/css/capitulo_1.html">Puedes encontrar más información aquí </a>
+              </article>
+
       <article class="formulario">
         <form>
-
-        &nbsp;  Nombre :   <input type="text"><br>
-        &nbsp; Apellidos : <input type="text"><br>
-        &nbsp; Correo:      <input type="email"><br>
-          <b> ¿Te ha resultado útil el contenido? </b><br>
-
-
-            <input type="radio" checked="" name="opinion" value="Si">Si
-            <input type="radio" name="opinion" value="No">No
+          <table align="center">
             <br>
-        <center><input class="continuar" type="submit" value="Continuar" />
+            <tr>
+      <td>  Nombre : </td> <td><input type="text"></td>
+          </tr>
+    <tr>
+      <td>Apellidos : </td> <td><input type="text"></td>
+    </tr>
+    <tr>
+       <td>Correo:   </td> <td><input type="email"></td>
+     </tr>
+   </td>
+   </table>
+   <br>
+        <center>  <b> ¿Te ha resultado útil el contenido? </b><br>
+          <table>
+            <tr>
+        <td> <input type="radio" checked="" name="opinion" value="Si">Si </td>
+      </tr>
+           <input type="radio" name="opinion" value="No">No
+            <br>
+        <center><input class="continuar" type="reset" value="Reiniciar formulario">
         </form>
       </article>
     </section>
