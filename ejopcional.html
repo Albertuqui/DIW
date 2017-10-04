@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio opcional</title>
+    <style type="text/css">
+p{
+  color:black;
+}
+:not(p){
+  color:red;
+}
+p::first-letter{font-family: fantasy; font-weight: bold; font-size:  30px}
+p.primero::after {content:"."; font-weight: bold; color:blue; font-size: 20px}
+input:checked {height: 20px;  width: 30px}
+input:enabled[type="text"] {
+  background-color: yellow;
+}
+input:focus[type="text"] {
+  background-color: aqua;
+}
+article img{
+  height: 100px;
+  width: 100px;
+  float:left;
+}
+[title~=css] {
+border: 5px solid red;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1> Introducción CSS </h1>
+      <br>
+    </header>
+    <section>
+      <article>
+        <img src="css.jpg" title="imagen css">
+        <p class="primero">  CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los documentos electrónicos definidos con HTML y XHTML.
+        CSS es la mejor forma de separar los contenidos y su presentación y es imprescindible para crear páginas web complejas </p>
+        <p class="segundo"> Separar la definición de los contenidos y la definición de su aspecto presenta numerosas ventajas,
+           ya que obliga a crear documentos HTML/XHTML bien definidos y con significado completo (también llamados "documentos semánticos").
+         Además, mejora la accesibilidad del documento, reduce la complejidad de su mantenimiento y permite visualizar el mismo documento en infinidad de dispositivos diferentes.</p>
+      </article>
+      <article class="formulario">
+        <form>
+
+        &nbsp;  Nombre :   <input type="text"><br>
+        &nbsp; Apellidos : <input type="text"><br>
+        &nbsp; Correo:      <input type="email"><br>
+          <b> ¿Te ha resultado útil el contenido? </b><br>
+
+
+            <input type="radio" checked="" name="opinion" value="Si">Si
+            <input type="radio" name="opinion" value="No">No
+            <br>
+        <center><input class="continuar" type="submit" value="Continuar" />
+        </form>
+      </article>
+    </section>
+  </body>
+</html>
