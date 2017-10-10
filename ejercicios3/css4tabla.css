@@ -7,11 +7,12 @@ table{
 
 
 table.tabla1 {
-  border: 2px solid #000;
+  border: 2px solid black;
   border-collapse: collapse;
   color:black;
   text-align:center;
 }
+
 table.tabla1 caption {
 caption-side: bottom;
 text-align: left;
@@ -22,7 +23,7 @@ color:black;
 
 table.tabla1 td {
   text-align: center;
-  border: 2px solid #000;
+  border: 2px solid black;
   color:black;
 }
 table.tabla1 tr:nth-child(even){
@@ -31,7 +32,7 @@ table.tabla1 tr:nth-child(even){
 table.tabla1 td.html{
 width:40px;
 height:40px;
-text-align:right;
+text-align:left;
 background-image:url('html.png');
 background-size: 30px 30px;
 background-position: left;
@@ -39,8 +40,8 @@ background-repeat: no-repeat;
 color:black;
 }
 table.tabla1 td.html:hover{
-  background: yellow;
-  text-align:right;
+  background: #FFFF66;
+  text-align:left;
   background-image:url('html.png');
   background-size: 30px 30px;
   background-position: left;
@@ -68,7 +69,7 @@ table.tabla1 td.css a{
 }
 
 table.tabla1 td.css:hover{
-  background: yellow;
+  background: #FFFF66;
   text-align:right;
   background-image:url('css1.png');
   background-size: 30px 30px;
@@ -78,9 +79,5 @@ table.tabla1 td.css:hover{
 }
 table.tabla1 td.html5 {
   background-color: Gainsboro;
-  border: none;
-}
-
-table.tabla1 td.html2 {
   border: none;
 }
