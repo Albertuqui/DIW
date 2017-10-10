@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <style type="text/css">
+    p.bordes{
+    border: 1px solid black;
+      font-style: italic;
+    }
+    input {
+          outline: 0px;
+      border-radius: 5px;
+    }
+
+    input:hover{
+      background: grey;
+      border: 4px solid purple;
+    }
+    textarea{
+      overflow: scroll;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <fieldset>
+<legend>Inscripción </legend>
+
+<fieldset>
+<legend>Información personal</legend>
+
+      <form method="post">
+        <table>
+          <tr>
+    <td> Nombre *:</td>
+    <td></td>
+    <td></td>
+    <td><input type="text" autofocus name="nombre" placeholder="Tu nombre" required ></td>
+  </tr>
+  <tr>
+    <td>Apellidos*:</td>
+    <td></td>
+    <td></td>
+  <td>  <input type="text" name="apellidos" placeholder="Tus apellidos" required></td>
+</tr>
+<tr>
+  <td>Email*:</td>
+  <td></td>
+  <td></td>
+<td>  <input type="email" name="email" placeholder="Email" required></td>
+</tr>
+<tr>
+  <td>Sexo: </td>
+  <td></td>
+  <td></td>
+  <td>Hombre <input type="radio" name="sexo" value="hombre"> </td>
+  <td> Mujer <input type="radio" name="sexo" value="mujer"> </td>
+</tr>
+<tr>
+  <td>Fecha de nacimiento*: </td>
+  <td></td>
+  <td></td>
+  <td><input type="date" name="fecha" required> </td>
+</tr>
+<tr>
+  <td>Provincia: </td>
+  <td></td>
+  <td></td>
+  <td><select name="provincias">
+<option value="select" selected >Escoge provincia</option>
+<option value="cast">Castellón</option>
+<option value="val">Valencia</option>
+<option value="al">Alicante</option>
+</select></td>
+</tr>
+<tr>
+  <td>Poblacion:</td>
+  <td></td>
+  <td></td>
+<td>  <input type="text" name="poblacion" placeholder="Tu población"></td>
+</tr>
+<tr>
+  <td>Teléfono:</td>
+  <td></td>
+  <td></td>
+<td>  <input type="tel" name="telf" placeholder="Tu telefóno"></td>
+</tr>
+<table>
+<tr>
+  <td>Motivo inscripción</td>
+</tr>
+<tr>
+<td><textarea  cols="100"></textarea></td>
+</tr>
+</table>
+<tr>
+  <td>Escoge el color de tu avatar:</td>
+  <td></td>
+  <td></td>
+<td>  <input type="color" name="col"></td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+  <legend>Creación de usuario</legend>
+  <table>
+  <tr>
+  <td> Nombre de usuario *</td>
+  <td></td>
+  <td></td>
+  <td><input type="text" name="nomusuario" placeholder="Nombre de usuario" required></td>
+  </tr>
+  <tr>
+  <td>Contaseña*</td>
+  <td></td>
+  <td></td>
+  <td>  <input type="password"minlength="8" maxlength="10"  name="password1"placeholder="Contraseña" required></td>
+  </tr>
+  <tr>
+  <td>Repetir contraseña*</td>
+  <td></td>
+  <td></td>
+  <td>  <input type="password" minlength="8" maxlength="10"  name="password2" placeholder="Contraseña" required></td>
+  </tr>
+  <tr>
+</table>
+</fieldset>
+<input type="checkbox" name="1" value="mensajes"> Deseo recibir copias de los mensajes del foro en mi correo electrónico<br>
+<input type="checkbox" name="2" value="notificaciones">  Deseo recibir notificaciones de próximos eventos en mi correo electrónico.<br>
+<input type="submit" value="Confirmar registro">
+<p class="bordes">Nota: los campos marcados con "*" son obligatorios</p>
+  </form>
+  </body>
+</html>

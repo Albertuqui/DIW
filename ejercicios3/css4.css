@@ -1,0 +1,23 @@
+.boton {    font-family: verdana;
+ font-size: 10pt;
+ font-weight: bold;
+ padding: 4px;
+ background-color: yellow;
+ color: black;
+ text-decoration: none;
+
+}
+
+.boton:link,
+.boton:visited {
+   border-top: 1px solid black;
+   border-bottom: 2px solid red;
+   border-left: 1px solid black;
+   border-right: 2px solid red;
+}
+.boton:hover {
+    border-bottom: 1px solid black;
+   border-top: 2px solid white;
+   border-right: 1px solid black;
+   border-left: 2px solid white;
+}

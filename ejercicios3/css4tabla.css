@@ -1,0 +1,86 @@
+
+table{
+  width:150px;
+  margin:auto;
+  background: white;
+}
+
+
+table.tabla1 {
+  border: 2px solid #000;
+  border-collapse: collapse;
+  color:black;
+  text-align:center;
+}
+table.tabla1 caption {
+caption-side: bottom;
+text-align: left;
+font-style: italic;
+color:black;
+}
+
+
+table.tabla1 td {
+  text-align: center;
+  border: 2px solid #000;
+  color:black;
+}
+table.tabla1 tr:nth-child(even){
+  background-color: Gainsboro;
+}
+table.tabla1 td.html{
+width:40px;
+height:40px;
+text-align:right;
+background-image:url('html.png');
+background-size: 30px 30px;
+background-position: left;
+background-repeat: no-repeat;
+color:black;
+}
+table.tabla1 td.html:hover{
+  background: yellow;
+  text-align:right;
+  background-image:url('html.png');
+  background-size: 30px 30px;
+  background-position: left;
+  background-repeat: no-repeat;
+  color:black;
+}
+
+table.tabla1 td.html a{
+  color:black;
+}
+
+table.tabla1 td.css{
+  width:40px;
+  height:40px;
+text-align:right;
+background-image:url('css.png');
+background-size: 30px 30px;
+background-position: left;
+background-repeat: no-repeat;
+  color:black;
+}
+
+table.tabla1 td.css a{
+  color:black;
+}
+
+table.tabla1 td.css:hover{
+  background: yellow;
+  text-align:right;
+  background-image:url('css.png');
+  background-size: 30px 30px;
+  background-position: left;
+  background-repeat: no-repeat;"
+  color:black;
+}
+table.tabla1 td.html5 {
+  background-color: Gainsboro;
+  border: none;
+}
+
+table.tabla1 td.html2 {
+  border: none;
+}

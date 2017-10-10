@@ -1,0 +1,13 @@
+body {
+  background-image: url("blue.jpg") ;
+  background-repeat: repeat;
+}
+.chrome{
+  background: url("chrome.png") no-repeat left center;
+  background-size: 20px 10px;
+}
+h1 {
+  background-image: url("blue1961.jpg");
+  background-repeat: repeat-x;
+  color:white;
+}
