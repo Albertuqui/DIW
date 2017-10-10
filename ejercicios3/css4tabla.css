@@ -56,7 +56,7 @@ table.tabla1 td.css{
   width:40px;
   height:40px;
 text-align:right;
-background-image:url('css.png');
+background-image:url('css1.png');
 background-size: 30px 30px;
 background-position: left;
 background-repeat: no-repeat;
@@ -70,7 +70,7 @@ table.tabla1 td.css a{
 table.tabla1 td.css:hover{
   background: yellow;
   text-align:right;
-  background-image:url('css.png');
+  background-image:url('css1.png');
   background-size: 30px 30px;
   background-position: left;
   background-repeat: no-repeat;"
