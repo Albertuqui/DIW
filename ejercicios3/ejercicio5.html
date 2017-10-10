@@ -13,25 +13,28 @@
       border-radius: 5px;
     }
 
-    input[type="text"]:hover{
+  input[type="text"]:focus{
       background: grey;
       border: 4px solid purple;
     }
 
-    input[type="password"]:hover{
+    input[type="password"]:focus{
       background: grey;
       border: 4px solid purple;
     }
 
-    input[type="email"]:hover{
+    input[type="email"]:focus{
       background: grey;
       border: 4px solid purple;
     }
 
-    input[type="tel"]:hover{
+    input[type="tel"]:focus{
       background: grey;
       border: 4px solid purple;
     }
+
+
+    </script>
 
     textarea{
       overflow: scroll;
@@ -54,13 +57,13 @@
     <td> Nombre *:</td>
     <td></td>
     <td></td>
-    <td><input type="text" autofocus name="nombre" placeholder="Tu nombre" required ></td>
+    <td><input type="text" name="nombre" placeholder="Escriba su nombre" required></td>
   </tr>
   <tr>
     <td>Apellidos*:</td>
     <td></td>
     <td></td>
-  <td>  <input type="text" name="apellidos" placeholder="Tus apellidos" required></td>
+  <td>  <input type="text" name="apellidos" placeholder="Escriba su apellidos" required></td>
 </tr>
 <tr>
   <td>Email*:</td>

@@ -10,4 +10,5 @@ h1 {
   background-image: url("blue1961.jpg");
   background-repeat: repeat-x;
   color:white;
+  -moz-hyphens: auto;
 }
