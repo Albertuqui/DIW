@@ -14,6 +14,7 @@ h1 {
   word-break: break-all;
   word-wrap: break-word;
   -moz-hyphens: auto; /*no entiendo porque no funciona*/
+  margin:auto;
 }
 
 p {
