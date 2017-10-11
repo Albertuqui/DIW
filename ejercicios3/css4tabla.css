@@ -39,7 +39,7 @@ background-position: left;
 background-repeat: no-repeat;
 color:black;
 }
-table.tabla1 td.html:hover{
+table.tabla1 td.html:active{
   background: #FFFF66;
   text-align:left;
   background-image:url('html.png');
@@ -68,7 +68,7 @@ table.tabla1 td.css a{
   color:black;
 }
 
-table.tabla1 td.css:hover{
+table.tabla1 td.css:active{
   background: #FFFF66;
   text-align:right;
   background-image:url('css1.png');
