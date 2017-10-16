@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo</title>
+    <style media="screen">
+      div {
+        margin-top: 10px;
+      }
+
+      div label{
+        width: 15%;
+        float: left;
+      }
+
+      input[text] {
+        padding-left: 0.5em;
+      }
+div#fecha {
+  clear:left;
+}
+
+    </style>
+
+  </head>
+  <body>
+    <fieldset>
+<legend>Inscripción </legend>
+
+<fieldset>
+<legend>Información personal</legend>
+    <form method="post">
+          <div>
+            <label for="nombre">Nombre</label>
+  <input type="text" name="nombre" autofocus placeholder="Escriba su nombre" id="nombre" required>
+</div>
+<div>
+  <label for="apellidos">Apellidos*</label>
+  <input type="text" name="apellidos" placeholder="Escriba sus apellidos" id="apellidos" required>
+</div>
+<div>
+  <label for ="email">Email*</label>
+  <input type="email" name="email" placeholder="Email" id="email" required>
+</div>
+
+<div>
+  <label for ="sexo">Sexo</label>
+  <label for ="hombre"> Hombre: <input type="radio" value="hombre" id="hombre"></label>
+<label for ="mujer"> Mujer: <input type="radio"  value="hombre" id="mujer"></label>
+</div>
+<div id="fecha">
+  <label for ="fecha">Fecha de nacimiento:</label>
+<input type="date" name="fecha" required>
+</div>
+<div>
+  <label for ="provincia">Provincia:</label>
+  <select name="provincias">
+  <option value="select" selected  id="provincia">Escoge provincia</option>
+  <option value="cast" id="provincia">Castellón</option>
+  <option value="val" id="provincia">Valencia</option>
+  <option value="al" id="provincia">Alicante</option>
+  </select>
+</div>
+<div>
+  <label for ="poblacion">Poblacion:</label>
+<input type="text" name="poblacion" placeholder="Su población" id="poblacion">
+</div>
+<div>
+  <label for ="telefono">Telefóno:</label>
+<input type="tel" name="telf" placeholder="Su telefóno de móvil" id="telefono">
+</div>
+
+  </body>
+
+</html>

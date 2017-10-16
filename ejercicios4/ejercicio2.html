@@ -9,7 +9,7 @@
       font-style: italic;
     }
     input {
-          outline: 0px;
+          outline: none;
       border-radius: 5px;
     }
 
@@ -35,6 +35,7 @@
 
     textarea{
       overflow: scroll;
+        border-radius: 5px;
     }
     </style>
   </head>
@@ -47,12 +48,15 @@
 
       <form method="post">
         <table>
-          <tr>
-    <td> Nombre *:</td>
+          <div>
+            <tr>
+            <td><label for="nombre">Nombre</td>
     <td></td>
     <td></td>
-    <td><input type="text" name="nombre" autofocus placeholder="Escriba su nombre" required></td>
+    <td><input type="text" name="nombre" autofocus placeholder="Escriba su nombre" id="nombre" required></td>
   </tr>
+</label>
+</div>
   <tr>
     <td>Apellidos*:</td>
     <td></td>
@@ -127,10 +131,10 @@
   <td><input type="text" name="nomusuario" placeholder="Nombre de usuario" required></td>
   </tr>
   <tr>
-  <td>Contaseña*</td>
+  <td>Contraseña*</td>
   <td></td>
   <td></td>
-  <td>  <input type="password"minlength="8" maxlength="10"   name="password1" placeholder="Su contraseña" required></td>
+  <td> <input type="password"minlength="8" maxlength="10"   name="password1" placeholder="Su contraseña" required></td>
   </tr>
   <tr>
   <td>Repetir contraseña*</td>
