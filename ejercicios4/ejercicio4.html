@@ -4,18 +4,23 @@
     <meta charset="utf-8">
     <title>Ejercicio 4</title>
     <style media="screen">
-    ul{
+    body>ul{
       list-style: none;
       background-color: lightgrey;
       border:1px solid gray;
       width:180px;
-      padding-left:20px;
+      padding-left:0px;
       margin:0px;
     }
     li{
       border-top: 1px solid gray;
       border-bottom: 1px solid gray;
     }
+     li:hover, a:hover{
+      background-color: darkgray;
+      color:green;
+    }
+
     li a{
       text-decoration: none;
       color:black;
@@ -24,28 +29,28 @@
     }
 
     li ul {
+          display: none;
     }
 
     li:hover ul{
+            display:block;
     }
-    li:hover a{
-      background-color: darkgray;
+
+
+    li>ul {
+      list-style-type: square;
+      background-color: lightgray;
       color:green;
     }
 
-ul.menu{
-  list-style-type: square;
-  padding-left: 0px;
-  border: none;
-}
-
-ul.menu li a{
-    color: black;
-padding-right: 1px;
+    li.submenu a:hover{
+        color:black;
     }
 
 
+    li.menu>a:hover{
 
+    }
 
 
 
@@ -53,20 +58,20 @@ padding-right: 1px;
   </head>
   <body>
     <ul>
-      <li><a href="#">Elemento 1</a>
-      <ul class="menu">
-        <li><a href="#">Submenu 1.1</a></li>
-        <li><a href="#">Submenu 1.2</a></li>
-          <li><a href="#">Submenu 1.3</a></li>
+      <li class="menu"><a href="#">Elemento 1</a>
+      <ul>
+        <li class="submenu"><a href="#">Submenu 1.1</a></li>
+        <li class="submenu"><a href="#">Submenu 1.2</a></li>
+          <li  class="submenu"><a href="#">Submenu 1.3</a></li>
       </ul>
     </li>
       <li><a href="#">Elemento 2</a></li>
       <li><a href="#">Elemento 3</a></li>
-      <li><a href="#">Elemento 4</a>
-      <ul class="menu">
-        <li><a href="#">Submenu 4.1</a></li>
-        <li><a href="#">Submenu 4.2</a></li>
-        <li><a href="#">Submenu 4.3</a></li>
+      <li class="menu"><a href="#">Elemento 4</a>
+      <ul>
+        <li  class="submenu"><a href="#">Submenu 4.1</a></li>
+        <li class="submenu"><a href="#">Submenu 4.2</a></li>
+        <li class="submenu"><a href="#">Submenu 4.3</a></li>
       </ul>
     </li>
       <li><a href="#">Elemento 5</a></li>
