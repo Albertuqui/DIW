@@ -31,6 +31,7 @@ div#fecha {
 }
 textarea{
   overflow: scroll;
+  height:40px;
 }
 
 input,textarea,select {
@@ -38,6 +39,10 @@ input,textarea,select {
   border-radius: 5px;
 }
 
+label.nombre{
+  height:30px;
+width:70px;
+}
     </style>
 
   </head>
@@ -50,7 +55,7 @@ input,textarea,select {
     <form method="post">
           <div>
             <label for="nombre">Nombre*:</label>
-  <input type="text" name="nombre" autofocus="autofocus" placeholder="Escriba su nombre" id="nombre" required="required">
+  <input type="text" name="nombre" autofocus="autofocus" placeholder="Escriba su nombre" id="nombre" required="required" height="100px">
 </div>
 <div>
   <label for="apellidos">Apellidos*:</label>
