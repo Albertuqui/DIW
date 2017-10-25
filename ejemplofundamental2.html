@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo Layout Básico</title>
+    <style media="screen">
+      *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      html,body{
+        height: 100%;
+      }
+
+      header{
+        width:100%;
+        display:table;
+        background-color: lightblue;
+        position: fixed;
+        z-index: 100;
+      }
+
+      .logo >img{
+        width:80px;
+        padding: 10px;
+      }
+
+      .logo{
+        display:table-cell;
+      }
+
+      header h1{
+        display:table-cell;
+        vertical-align: middle;
+      }
+      nav{
+        background-color: yellow;
+      }
+
+      li{
+        display: inline-block;
+        padding: 10px;
+      }
+
+      .container{
+        padding-top: 145px;
+        min-height: 100%;
+        margin-bottom: -50px;
+      }
+
+      footer{
+        height: 50px;
+        background-color:lightgreen;
+      }
+
+      .cajaPie{
+        height: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="corporativo">
+        <div class="logo">
+          <img src="../DIWCibeles\U2\ejemplos\Ej layout fijo vs fluido y menu horizontal/imagen.png" alt="logo">
+        </div>
+        <h1>Esto es la cabecera</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Elemento 1</a></li>
+          <li><a href="#">Elemento 2</a></li>
+          <li><a href="#">Elemento 3</a></li>
+          <li><a href="#">Elemento 4</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="cajaPie">
+</div>
+    </div>
+    <footer>
+      <hr>
+      <p> Esto es un pie </p>
+    </footer>
+  </body>
+</html>
