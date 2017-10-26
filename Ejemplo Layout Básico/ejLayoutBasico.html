@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo Layout</title>
+    <style media="screen">
+      *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      html, body{
+        height: 100%;
+      }
+
+      body{
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header{
+        background-color: lightblue;
+        display: table;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+      }
+      /*.corporativo, .menuPrincipal{
+        width: 100%
+        display:table-row;
+      }*/
+      .logo{
+        display: table-cell;
+        vertical-align: middle;
+        width: 100px;
+      }
+      h1{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+      }
+      .logo > img{
+        width: 80px;
+        margin: 10px;
+      }
+      .container{
+        padding-top: 150px;
+        /*min-height: 100%;*/
+        /*margin-bottom: -50px;*/
+        flex:1;
+      }
+      nav{
+        background-color: lightgrey;
+        width: 100%;
+      }
+      nav ul > li{
+        display: inline-block;
+        padding: 10px;
+      }
+      /*.espacioFooter{
+        height: 50px;
+      }*/
+      footer{
+        background-color: lightblue;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="corporativo">
+        <div class="logo">
+          <img src="imagen.png" alt="logo.png">
+        </div>
+        <h1>Cabecera</h1>
+      </div>
+      <div class="menuPrincipal">
+        <nav>
+          <ul>
+            <li><a href="#">Elemento 1</a></li>
+            <li><a href="#">Elemento 2</a></li>
+            <li><a href="#">Elemento 3</a></li>
+            <li><a href="#">Elemento 4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!--<div class="espacioFooter"></div>-->
+    </div>
+    <footer>
+      <hr>
+      <p>Esto es el pie</p>
+    </footer>
+  </body>
+</html>
