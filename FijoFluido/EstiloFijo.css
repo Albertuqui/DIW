@@ -1,0 +1,98 @@
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header{
+  background-color: lightblue;
+  display: table;
+  border-collapse : collapse;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+header h1 {
+  display: table-cell;
+  vertical-align: middle;
+  font: bold 36px Helvetica, sans-serif;
+
+}
+
+header figure{
+  display: table-cell;
+  padding: 40px;
+  padding-right: 30px;
+  width: 10px;
+}
+
+header figure img{
+width: 100px;
+height: 100px;
+}
+
+section{
+
+  max-width:960px;
+}
+
+article{
+  background-color: linen;
+  border: 1px solid;
+}
+article.primerart figure img {
+  width: 80px;
+  height: 80px;
+}
+
+article.primerart{
+  margin-bottom: 10px;
+}
+aside{
+  padding-right: 50px;
+}
+
+article h1{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Verdana;
+}
+
+article h2, aside{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Verdana;
+}
+
+header nav{
+display: table-cell;
+vertical-align: top;
+padding-top: 40px;
+padding-left: 340px;
+}
+
+header nav ul{
+  display: table;
+  list-style: none;
+
+}
+article footer{
+text-align: right;
+}
+
+header nav ul li{
+  display: table-cell;
+  margin: 20px;
+  padding: 5px;
+}
+header nav ul li a{
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+  background-color: steelblue;
+  font-weight: bold;
+
+}
+
+aside{
+  background-color: lightgrey;
+}
