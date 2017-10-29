@@ -1,0 +1,210 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+
+header{
+  display: table;
+  background-color: lightblue;
+  width: 100%;
+  position: fixed;
+}
+
+header h1{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 36px;
+  font-family: Helvetica;
+}
+
+header figure{
+  padding: 30px;
+  padding-right: 0px;
+}
+
+header figure img{
+  width: 100px;
+  height: 100px;
+}
+
+header nav{
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 40px;
+}
+
+header nav ul{
+  text-align: right;
+}
+header nav ul li{
+  display: inline-block;
+  padding: 5px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+  background-color: steelblue;
+  padding: 10px;
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 14px;
+}
+
+section{
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 170px;
+  flex: 1;
+}
+
+aside{
+  float: right;
+  background-color: lightgrey;
+  padding-right: 120px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+aside ul{
+  list-style: none;
+
+}
+
+aside ul li{
+  padding-bottom: 5px;
+}
+
+aside ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+aside ul li ul{
+  display: none;
+}
+
+aside ul li:hover ul{
+  display: block;
+}
+
+article.articulo1{
+  background-color: linen;
+  max-width: 750px;
+  border: 1px solid lightgrey;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+article.articulo1 hgroup h1{
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 24px;
+}
+
+article.articulo1 hgroup h2{
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+article.articulo1 time{
+  color: grey;
+}
+
+article.articulo1 p{
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+article.articulo1 figure img{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+article.articulo1 figure figcaption{
+  font-style: italic;
+}
+
+article.articulo1 footer{
+  text-align: right;
+}
+
+article.articulo1 footer a{
+  text-decoration: none;
+  color: steelblue;
+  font-weight: bold;
+}
+
+article.articulo2{
+  background-color: linen;
+  max-width: 750px;
+  border: 1px solid lightgrey;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+article.articulo2 hgroup h1{
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 24px;
+}
+
+article.articulo2 hgroup h2{
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+article.articulo2 time{
+  color: grey;
+}
+
+article.articulo2 p{
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+article.articulo2 footer{
+  text-align: right;
+}
+
+article.articulo2 footer a{
+  text-decoration: none;
+  color: steelblue;
+  font-weight: bold;
+}
+
+footer{
+  width: 100%;
+}
+
+footer hr{
+  border: 1.5px solid lightgrey;
+}
+
+footer p{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}

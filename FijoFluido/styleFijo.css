@@ -28,6 +28,7 @@ div.header{
   display: table-cell;
   vertical-align: middle;
 }
+
 .logo img{
   width: 80px;
 }
@@ -103,12 +104,12 @@ Ponemos:
   list-style-position: inside;
 }
 .nav{
-  
+
   background-color: lightyellow;
   width:192px;
   height: 400px;
   float:left;
-  padding: 5px;
+  padding-left: 150px;
 }
 .nav ul{
   padding: 10px;
