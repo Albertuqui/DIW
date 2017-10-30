@@ -1,0 +1,154 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+
+header{
+  display: table;
+  background-color: lightblue;
+  width: 100%;
+  position: fixed;
+}
+
+header h1 {
+  display: table-cell;
+  vertical-align: middle;
+  font: bold 36px Helvetica, sans-serif;
+}
+header figure{
+  padding: 30px;
+  padding-right: 0px;
+}
+
+header figure img{
+width: 80px;
+height: 80px;
+}
+
+header nav{
+display: table-cell;
+vertical-align: top;
+padding-top: 40px;
+}
+
+header nav ul{
+  text-align: right;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 5px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+  background-color: steelblue;
+  font-weight: bold;
+}
+
+section {
+padding-top: 180px;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  flex:1;
+}
+
+aside{
+  float: right;
+  background-color: lightgrey;
+  padding-right: 120px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+aside ul{
+  list-style: none;
+}
+
+aside ul li{
+  padding-bottom: 5px;
+}
+
+aside ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+aside ul li ul{
+  display: none;
+}
+
+aside ul li:hover ul{
+  display: block;
+}
+
+article{
+    background-color: linen;
+    border: 1px solid;
+    max-width: 750px;
+}
+
+article h1 {
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left:10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+article h2{
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 14px;
+  margin-left:20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+article p,figure{
+  margin-top: 10px;
+ margin-left:10px;
+ margin-right: 20px;
+ margin-left: 20px;
+}
+
+article time{
+  margin-left:20px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  color:grey;
+}
+
+article.primerart figure img {
+  width: 200px;
+  height: 200px;
+}
+
+article.primerart figure figcaption{
+  font-style: italic;
+}
+
+article footer{
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+article footer a{
+  text-decoration: none;
+  color: steelblue;
+  font-weight: bold;
+}
