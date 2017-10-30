@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 
-body{
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 
@@ -43,7 +42,8 @@ padding-top: 180px;
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
-  flex:1;
+  min-height: 100%;
+    margin-bottom: -50px;
 }
 
 
@@ -53,24 +53,49 @@ article{
   max-width: 700px;
  }
 
-article h1,h2,time,p,figure{
+article p,figure{
+  margin-top: 10px;
  margin-left:10px;
- margin-top: 10px;
- margin-bottom: 10px;
- margin-right: 10px;
+ margin-right: 20px;
+ margin-left: 20px;
+}
+
+article h1 {
+  margin-top: 20px;
+  margin-left:10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+article h2{
+  margin-left:20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+article time{
+  margin-left:20px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  color:grey;
 }
 
 article footer{
   padding-bottom: 10px;
+  margin-right: 20px;
 }
 article footer a{
   text-decoration: none;
+  color:blue;
 
 }
 
 article.primerart figure img {
   width: 200px;
   height: 200px;
+}
+
+article.primerart figure figcaption{
+  font-style: italic;
 }
 
 article.primerart{
@@ -115,7 +140,7 @@ article h1{
     font-family: Verdana;
 }
 
-article h2, aside{
+article h2, nav{
     font-weight: bold;
     font-size: 14px;
     font-family: Verdana;
@@ -137,6 +162,9 @@ article.primerart  footer, article.segundoart footer{
 text-align: right;
 }
 
+article.segundoart{
+  margin-bottom: 30px;
+}
 header nav ul li{
   display: table-cell;
   margin: 20px;
@@ -148,4 +176,16 @@ header nav ul li a{
   padding: 10px;
   background-color: steelblue;
   font-weight: bold;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer p{
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.footer,.CajaPie{
+  height: 50px;
 }
