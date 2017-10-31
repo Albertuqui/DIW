@@ -10,11 +10,17 @@ flex-direction: column;
 min-height: 100vh;
 }
 
+.container{
+width: 100%;
+margin: auto;
+max-width: 960px;
+}
 
 header{
   background-color: lightblue;
   display: table;
   width: 100%;
+  max-width: 960px;
   position: fixed;
 }
 
@@ -39,8 +45,7 @@ height: 80px;
 
 
 section {
-  padding-top: 1px;
-  width: 100%;
+ padding-top: 160px;
   margin-right: auto;
   margin-left: auto;
   min-height: 100%;
@@ -52,7 +57,7 @@ section {
 article{
   background-color: linen;
   border: 1px solid;
-  max-width: 73%;
+  max-width: 72%;
  }
 
 article p,figure{
@@ -104,10 +109,10 @@ article.primerart{
 }
 
 aside{
-  float: right;
-  background-color: lightgrey;
-width: 21%;
-padding: 1.5%;
+float: right;
+background-color: lightgrey;
+width: 20%;
+padding: 1%;
 margin-right: 5%;
 }
 
@@ -117,7 +122,7 @@ aside ul{
 }
 
 aside ul>li{
-  padding-bottom: 1%;
+  padding-bottom: 8%;
 }
 aside ul li a{
   text-decoration: none;
@@ -140,7 +145,7 @@ article h1{
 
 article h2, nav{
     font-weight: bold;
-    font-size: 0.875em;
+    font-size: 0.8em;
     font-family: Verdana;
 }
 
@@ -173,25 +178,17 @@ margin-top: 0px;
 }
 
 article.segundoart{
-  margin-bottom: 30px;
+  margin-bottom: 3%;
 }
 
 
-body footer{
+footer{
+  margin-right: auto;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 footer p{
   font-weight: bold;
   padding-top: 20px;
-}
-
-.container{
-  padding: 150px;
-  padding-bottom: 0px;
-  margin-bottom: 5px;
-  margin: auto;
-  width:100%;
-  max-width:960px;
 }

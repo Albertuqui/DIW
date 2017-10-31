@@ -10,6 +10,11 @@ flex-direction: column;
 min-height: 100vh;
 }
 
+.container{
+margin:  auto;
+width: 100%;
+}
+
 header{
   background-color: lightblue;
   display: table;
@@ -21,7 +26,7 @@ header{
 header h1 {
   display: table-cell;
   vertical-align: middle;
-  font: bold 300% Helvetica, sans-serif;
+  font: bold 2.25em Helvetica, sans-serif;
 
 }
 
@@ -38,10 +43,11 @@ height: 80px;
 
 
 section {
-padding-top: 180px;
-  max-width: 960px;
+ padding-top: 160px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 50px;
+  min-height: 100%;
+  margin-bottom: -50px;
   flex:1;
 }
 
@@ -49,51 +55,73 @@ padding-top: 180px;
 article{
   background-color: linen;
   border: 1px solid;
-  max-width: 700px;
+  max-width: 72%;
  }
 
-article h1,h2,time,p,figure{
- margin-left:10px;
- margin-top: 10px;
- margin-bottom: 10px;
- margin-right: 10px;
+article p,figure{
+  margin-top: 1%;
+ margin-left:1%;
+ margin-right: 2%;
+ margin-left: 2%;
+}
+
+article h1 {
+  margin-top: 2%;
+  margin-left:1%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+article h2{
+  margin-left:2%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+article time{
+  margin-left:2%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  color:grey;
 }
 
 article footer{
-  padding-bottom: 10px;
+  padding-bottom: 1%;
 }
 article footer a{
   text-decoration: none;
+  color:steelblue;
 
 }
 
 article.primerart figure img {
-  width: 200px;
-  height: 200px;
+  width: 21%;
+  height: 21%;
+}
+
+article.primerart figure figcaption{
+  font-style: italic;
 }
 
 article.primerart{
-  margin-bottom: 10px;
+  margin-bottom: 1%;
 }
 
 aside{
-  float: right;
-  background-color: lightgrey;
-  padding-right: 120px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+float: right;
+background-color: lightgrey;
+width: 20%;
+padding: 1%;
+margin-right: 5%;
 }
 
 aside ul{
   list-style: none;
-
+  text-align: left;
 }
 
-aside ul li{
-  padding-bottom: 5px;
+aside ul>li{
+  padding-bottom: 8%;
 }
-
 aside ul li a{
   text-decoration: none;
   color: black;
@@ -107,40 +135,33 @@ aside ul li:hover ul{
   display: block;
 }
 
-
 article h1{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: Verdana;
 }
 
-article h2, aside{
+article h2, nav{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.8em;
     font-family: Verdana;
 }
 
 header nav{
 display: table-cell;
 vertical-align: top;
-padding-top: 40px;
-padding-left: 0px;
+padding-top: 30px;
 }
 
 header nav ul{
-  display: table;
-  list-style: none;
-
-}
-article.primerart  footer, article.segundoart footer{
 text-align: right;
 }
 
 header nav ul li{
-  display: table-cell;
-  margin: 20px;
+  display: inline-block;
   padding: 5px;
 }
+
 header nav ul li a{
   text-decoration: none;
   color:white;
@@ -148,11 +169,24 @@ header nav ul li a{
   background-color: steelblue;
   font-weight: bold;
 }
-body footer{
-  text-align: center;
-margin-top: 20px;
+
+article.primerart  footer, article.segundoart footer{
+text-align: right;
+margin-top: 0px;
 }
 
-body footer p{
-  padding-bottom: 20px;
+article.segundoart{
+  margin-bottom: 3%;
+}
+
+
+footer{
+  text-align: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+footer p{
+  font-weight: bold;
+  padding-top: 20px;
 }
