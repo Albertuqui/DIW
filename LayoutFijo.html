@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo</title>
+  </head>
+<style media="screen">
+  *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  #cabecera{
+    display: table;
+    background: lightblue;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+  }
+
+  div.logo{
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .logo img {
+    width: 80px;
+    margin: 10px;
+  }
+
+  #cabecera h1{
+    display: table-cell;
+      vertical-align: middle;
+    text-align: left;
+    z-index: 100;
+  }
+
+  nav{
+    display: table-cell;
+      vertical-align: top;
+      text-align: right;
+  }
+
+  nav li{
+    display: inline-block;
+    list-style: none;
+    background-color: steelblue;
+    padding: 10px;
+  }
+  nav li:hover{
+    background-color: navy;
+  }
+
+  body{
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .contenedor{
+    width: 960px;
+    margin: auto;
+    text-align: left;
+    padding-top: 134px;
+    flex:1;
+  }
+
+  section{
+    width:660px;
+    float: left;
+    margin: 20px;
+  }
+
+  article{
+    background-color: linen;
+    border: 1px solid gray;
+  }
+
+  aside {
+    width: 220px;
+    float:left;
+    margin-left: 20px;
+    background: lightgray;
+    padding: 20px;
+    margin-top:20px;
+  }
+
+  aside li{
+    list-style: none;
+  }
+
+  aside li ul {
+    display: none;
+  }
+
+  aside li:hover ul{
+    display: block;
+    padding: 50px;
+  }
+  footer{
+    clear:both;
+    width:100%;
+  }
+
+  #pie{
+    clear: both;
+    width:100%;
+  }
+
+  nav a{
+    text-decoration: none;
+    color:white;
+    display: block;
+  }
+  figure img {
+    width: 200px;
+  }
+</style>
+  <body>
+    <header id="cabecera">
+      <div class="logo">
+        <img src="imagen.png" alt="logotipo">
+      </div>
+      <h1>Esto es una cabecera</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Opción 1</a></li>
+          <li><a href="#">Opción 2</a></li>
+          <li><a href="#">Opción 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <section>
+        <article>
+          <header>
+          <hgroup>
+            <h1>Titulo de mi entrada</h1>
+            <h2>Subtitulo de mi entrada</h2>
+          </hgroup>
+          <time datetime="10-10-2016">Publicado el 10/10/2016</time>
+            </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <figure>
+            <img src="blogs-bloguers.jpg" alt="">
+            <figcaption>Leyenda de la imagen</figcaption>
+          </figure>
+          <footer> <p> Comments(0) </p></footer>
+        </article>
+      </section>
+      <aside>
+        <ul>
+          <li>Enero
+        </ul>
+        <ul>
+          <li>Entrada 1</li>
+            <li>Entrada 1</li>
+          </ul>
+        </li>
+        <ul>
+        <li>Febrero
+        </ul>
+          <ul>
+            <li>Entrada 1</li>
+            <li>Entrada 1</li>
+          </ul>
+        </li>
+        </ul>
+      </aside>
+    </div>
+    <footer id="pie">
+      <hr>
+      <p>Derechos reservados &copy; </p>
+    </footer>
+  </body>
+</html>
