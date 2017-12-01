@@ -1,0 +1,3 @@
+inkscape
+GIMP
+SVG Cleaner
