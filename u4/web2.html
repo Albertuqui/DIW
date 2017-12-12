@@ -102,7 +102,13 @@ font-family: 'Macondo', cursive;
   </div>
   <div class="row">
     <div class="foto1 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-      <img class="fotoenorme" src="cafe.jpg" alt="" width="100%" height="400px">
+      <picture>
+      <source media="(min-width: 992px)" srcset="grande.jpg">
+      <source media="(min-width: 576px)" srcset="mediano.jpg">
+      <source media="(min-width: 0px)" srcset="pequeño.jpg">
+      <!-- img para cargar la imagen del elemento source -->
+          <img class="fotoenorme" src="cafe100.jpg" alt="" width="100%" height="400px">
+      </picture>
       <p> El café nos llega por aire, mar y tierra. De los valles más salvajes de Sudamérica y de los más profundos de África. Nos lo envían pequeños productores de Colombia, México, Etiopía, Kenia, El Salvador, Brasil, Tanzania y Ruanda. Se lo compramos a través del comercio justo, y cuando abrimos los paquetes sentimos el cariño y el tesón de cada agricultor. Cada grano es especial, único, y por eso son cafés con nombres y apellidos.</p>
   </div>
   </div>
