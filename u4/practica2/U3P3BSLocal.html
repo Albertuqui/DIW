@@ -76,6 +76,9 @@
           margin: 10px;
         }
 
+        ul{
+          padding-left: 0px;
+        }
 
       body{
         font-family: Montserrat, sans-serif;/*Fuente externa*/
@@ -112,6 +115,12 @@
         display: block;
         width: 100%
       }
+
+      video{
+    width:100%;
+    height: auto;
+
+}
       .contenedorIframe{
         position: relative;
         width: 100%;
@@ -266,15 +275,9 @@
                         <figure>
         <figcaption>Ejemplo inserción HTML5</figcaption>
         <video controls>
-          <!-- WEBM: Es libre y lo soportan Chrome, Firefox y Opera -->
           <source src="" type="video/webm">
-          <!-- OGG: Es libre y lo soportan Chrome, Firefox, Opera y Safari -->
-          <source
-          src="FormatosImagen.ogv" type="video/ogg">
-          <!-- MP4: Tiene patente y lo soportan todos excepto versiones de Firefox inferiores v21  -->
-          <source
-          src="FormatosImagen.mp4" type="video/mp4">
-          Tu navegador no soporta este contenido
+          <source src="FormatosImagen.ogv" type="video/ogg">
+          <source src="FormatosImagen.mp4" type="video/mp4">
         </video>
       </figure>
 
