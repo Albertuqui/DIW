@@ -34,9 +34,9 @@ footer li a i {
        background:#b6269c;
             border-radius:15px;
    }
-   i:hover{
-     background: black;
-   }
+i[class*="fa"]:hover{
+background-color: black;
+}
 
 
 .icon-novedades {
