@@ -32,41 +32,37 @@
       document.getElementById('player').muted = true;
     }
   }
-
     </script>
     <style>
     .mute{
-          background: url('spritesAudio.png') no-repeat -1px -1px;
-  	      width: 128px;
-  	      height: 128px;
+    width: 128px; height: 128px;
+      background: url('audio.png')  -175px -10px;
           float:left;
         }
         .menosVol{
-          width: 128px;
-          height: 128px;
-          background: url("spritesAudio.png") no-repeat -513px -1px;
+           width: 145px; height: 130px;
+          background: url("audio.png") no-repeat -10px -10px;
           float:left;
         }
         .masVol{
           width: 128px;
           height: 128px;
-          background: url("spritesAudio.png") no-repeat -257px -1px;
+          background: url("audio.png") no-repeat -323px -10px;
           float:left;
         }
         .play{
-          background: url("spritesAudio.png") no-repeat -769px -1px;
-  	      width: 127px;
-  	      height: 127px;
+          width: 128px; height: 128px;
+       background: url('audio.png')  -10px -160px;
           float:left;
         }
         .stop{
-          background: url("spritesAudio.png") no-repeat -1024px -1px;
-  	      width: 129px;
-  	      height: 129px;
+          background: url("audio.png") no-repeat -158px -160px;
+  	      width: 128px;
+  	      height: 128px;
           float:left;
         }
         .mute:hover, .menosVol:hover, .masVol:hover, .stop:hover, .play:hover{
-          opacity: 0.7;
+          background-color: #28a745;
         }
         .parrafada{
           clear:left;
@@ -278,6 +274,7 @@
           <source src="" type="video/webm">
           <source src="FormatosImagen.ogv" type="video/ogg">
           <source src="FormatosImagen.mp4" type="video/mp4">
+            <source src="FormatosImagen.mp4" type="video/webm">
         </video>
       </figure>
 
