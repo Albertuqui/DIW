@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo uso append </title>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*Ejemplo con efectos varios*/
+		//Ej1: primero oculto y luego hago que aparezca
+		$(".div1").hide().fadeIn(3000);
+
+		//Ej2: si hacemos hover sobre el div, fadeOut permite que se desvanezca el objeto
+		$(".div2").hover(function(){
+		 	$(this).fadeOut(3000);
+		//  $(".div2").fadeOut(3000); //equivale a poner el this porque el hover es sobre el mismo elemento que se desvanece
+		});
+
+		//Ej3:
+		$(".div3").click(function(){
+			$(this).fadeTo("slow",0.4);
+		});
+
+		//Ej4:
+		$(".div4").hover(function(){
+			$(this).fadeToggle("slow");
+		});
+
+		//Ejemplos slide
+		$(".div5").hide().slideDown();
+		$(".div6").hover(function(){
+		 	$(this).slideUp("slow");
+		});
+		$("button").click(function(){
+			$(".div7").slideToggle();
+		});
+
+		//Ejemplo animación
+		$(".div8").click(function(){
+			$(this).animate({width:'100px',
+											 opacity: '1',
+											 fontSize:'24px'
+		 								},"slow");
+		});
+	});
+</script>
+<style media="screen">
+	div {
+		width: 220px;
+		height: 80px;
+		border: 1px solid grey;
+		margin: 5px;
+		float:left;
+	}
+	p{
+		clear:left;
+	}
+	.div1, .div5{background: yellow;}
+	.div2, .div6{background: orange;}
+	.div3, .div7{background: green;}
+	.div4, .div8{background: red; color:white;}
+	.div8{opacity: 0.4}
+</style>
+</head>
+<body>
+	<p>Desvanecer</p>
+	<div class="div1">Desvanecer: fadeIn()</div>
+	<div class="div2">Desvanecer: Haz hover y verás el fadeOut()</div>
+	<div class="div3">Desvanecer: Haz click y verás el fadeTo()</div>
+	<div class="div4">Desvanecer: Haz hover y verás el fadeToggle()</div>
+	<p>Desplegable</p>
+	<div class="div5">Despliega: slideDown()</div>
+	<div class="div6">Pliega: Haz hover y verás el slideUp()</div>
+	<div class="div7">Pliega y despliega con el botón y verás el slideToggle()</div>
+	<button type="button">Persiana</button>
+	<p>Animación</p>
+	<div class="div8">Anímate, es viernes!</div>
+	</body>
+</html>

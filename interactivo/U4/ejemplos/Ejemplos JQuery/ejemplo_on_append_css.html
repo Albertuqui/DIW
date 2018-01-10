@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo uso append </title>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("div").on("click", function(e){
+				//Alternativa 1: pongo las etiquetas html:
+   			$("div").append("<p><b>Texto</b> insertado en los div</p>");
+				//Alternativa 2: creo el elemento, le pongo contenido y lo añado a div
+				//var mip = $(document.createElement("p")).html("<b>Texto</b> insertado en los div");
+				//$("div").append(mip);
+		});
+		$("div").addClass("midiv");
+		//con el método css la propiedad tiene el mismo nombre que en CSS (no camelCase)
+		$("div").css("border","2px solid red");
+		$("div").css("font-family","Tahoma");
+	});
+</script>
+<style media="screen">
+	.midiv {background: orange; }
+</style>
+</head>
+<body>
+	<div class="midiv">Mi div 1 </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>U4.Contenido Interactivo: Animaciones CSS3</title>
+    <style media="screen">
+      div{
+        background-color: steelblue;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        width: 200px;
+        height: 100px;
+        margin: 35px;
+        display: inline-block;
+      }
+
+      .crecer:hover{
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+      }
+
+      .encoger:hover{
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+      }
+
+      .trasladarse:hover{
+        -moz-transform: translate(20px, 50px); /* Mozilla */
+        -ms-transform: translate(20px,50px); /* IE 9 */
+        -webkit-transform: translate(20px,50px); /* Safari */
+        transform: translate(20px,50px); /* Sintaxis estandard*/
+      }
+
+      .rotar:hover{
+        -webkit-transform:rotate(120deg);
+        -moz-transform:rotate(120deg);
+        -ms-transform:rotate(120deg);
+        transform:rotate(120deg);
+      }
+
+      .inclinarse:hover{ /* Se inclina 20º en el eje x y 10 en el y. También existe skewX y skewY*/
+        -moz-transform: skew(20deg, 10deg);
+        -ms-transform: skew(20deg,10deg);
+        -webkit-transform: skew(20deg,10deg);
+        transform: skew(20deg,10deg);
+      }
+
+      .unpocodetodo:hover{ /* La transformación de matrix corresponde a: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+        -moz-transform: matrix(1.5, -0.3, 0, 1, 20, -10);
+        -ms-transform: matrix(1.5, -0.3, 0, 1, 20, -10);
+        -webkit-transform: matrix(1.5, -0.3, 0, 1, 20, -10);
+        transform: matrix(1.5, -0.3, 0, 1, 20, -10);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transformaciones</h1>
+    <div class="crecer">Crecer</div>
+    <div class="encoger">Encoger</div>
+    <div class="trasladarse">Trasladarse</div>
+    <div class="rotar">Rotar</div>
+    <div class="inclinarse">Inclinarse</div>
+    <div class="unpocodetodo">De todo</div>
+    <a href="https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/transforms/demo-rotate3d.html">Otras transformaciones: Demo rotaciones 3D</a>
+  </body>
+</html>

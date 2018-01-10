@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>U4. Contenidos interactivos: transiciones con CSS.</title>
+    <style media="screen">
+    div.cambia, div.cambiaTransicion{
+      background-color: steelblue;
+      font-weight: bold;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+      margin: 10px;
+      width: 200px;
+      height: 100px;
+    }
+    .cambia:hover{
+      background-color: blue;
+      border-radius: 50%;
+    }
+    .cambiaTransicion:hover{
+      background-color: blue;
+      border-radius: 50%;
+      -webkit-transition: background-color 5s linear 1s;
+      -moz-transition: background-color 5s;
+      -o-transition: background-color 5s;
+      -ms-transition: background-color 5s;
+      transition: background-color 5s;
+      /*transition: all 5s;*/
+    }
+
+    /*Ejemplos con distintas funciones de timing. Por defecto la función es linear */
+    #ExampleB p{
+      width: 100px;
+      margin: 5px 0;
+      padding: 5px;
+      font-size: 20px;
+      color: white;
+      background-color: #ED8029;
+      text-align: right;
+      border-radius: 5px;
+    }
+    #ExampleB:hover p{ /*Ponemos el hover sobre el id para lanzar todas las transiciones a la vez*/
+      width: 500px;
+    }
+    #ExampleB p.ease {
+      -webkit-transition: 3s ease;
+      -moz-transition: 3s ease;
+      -ms-transition: 3s ease;
+      transition: 3s ease;
+    }
+    #ExampleB p.linear {
+      -webkit-transition: 3s linear;
+      -moz-transition: 3s linear;
+      -ms-transition: 3s linear;
+      transition: 3s linear;
+    }
+    #ExampleB p.lineardelay {
+      font-size: 14px;
+      -webkit-transition: 3s linear 1s;
+      -moz-transition: 3s linear 1s;
+      -ms-transition: 3s linear 1s;
+      transition: 3s linear 1s;
+    }
+    #ExampleB p.easein {
+      -webkit-transition: 3s ease-in;
+      -moz-transition: 3s ease-in;
+      -ms-transition: 3s ease-in;
+      transition: 3s ease-in;
+    }
+    #ExampleB p.easeout {
+      -webkit-transition: 3s ease-out;
+      -moz-transition: 3s ease-out;
+      -ms-transition: 3s ease-out;
+      transition: 3s ease-out;
+    }
+    #ExampleB p.easeinout {
+      -webkit-transition: 3s ease-in-out;
+      -moz-transition: 3s ease-in-out;
+      -ms-transition: 3s ease-in-out;
+      transition: 3s ease-in-out;
+    }
+
+    /*Ejemplo que combina transformaciones y transiciones
+
+    */
+
+    #ExampleC div.combina {
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      margin-left: 0;
+      -webkit-transition: 3s linear;
+      -moz-transition: 3s linear;
+      -ms-transition: 3s linear;
+      transition: 3s linear;
+    }
+    #ExampleC:hover div.combina {
+      width: 50px;
+      height: 50px;
+      margin-left: 400px;
+      font-size: 40px;
+      background-color: green;
+      -webkit-transform:rotate(360deg);
+      -moz-transform:rotate(360deg);
+      -ms-transform:rotate(360deg);
+      transform:rotate(360deg);
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>Transiciones</h1>
+    <h3>Las transiciones funcionan con las propiedades siguientes: transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]</h3>
+    <div class="cambia">Sin transición</div>
+    <div class="cambiaTransicion">Con transición</div>
+    <h3>Las funciones de timing provocan que la rapidez con la que se producen los cambios en la transición cambie</h3>
+    <div id="ExampleB">
+      <p class="ease">ease</p>
+      <p class="linear">linear</p>
+      <p class="easein">ease-in</p>
+      <p class="easeout">ease-out</p>
+      <p class="easeinout">ease-in-out</p>
+      <h4> También es posible incluir un retraso en la ejecución de la transición: </h4>
+      <p class="lineardelay">linear 1s delay</p>
+    </div>
+    <h3> Se puede combinar transformaciones y transiciones </h3>
+    <div id="ExampleC">
+      <div class="combina">:)</div>
+    </div>
+  </body>
+</html>
