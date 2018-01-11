@@ -122,17 +122,24 @@
       }
 
 
-    @keyframes animacion {
-      10%   {transform: rotate(90deg); margin-left:30px; opacity:1}
-      40%   {transform: rotate(180deg); margin-left:300px; opacity:0.2}
-      80% {transform: rotate(270deg); margin-left:400px; opacity:0.5}
-      100% {transform: rotate(360deg); margin-left:30px; opacity:1}
-    }
-    @keyframes animacion2 {
-      10%   {transform: rotate(-90deg); margin-right:0px; opacity:1}
-      40%   {transform: rotate(-180deg); margin-right:10px; opacity:0.2}
-        80% {transform: rotate(-270deg); margin-right:10px; opacity:0.5}
-      100% {transform: rotate(-360deg); margin-right:0px; opacity:1}
+      @keyframes animacion {
+        10%   {transform: rotate(90deg); margin-left:30px; opacity:1}
+        40%   {transform: rotate(180deg); margin-left:300px; opacity:0.2}
+        80% {transform: rotate(270deg); margin-left:400px; opacity:0.5}
+        100% {transform: rotate(360deg); margin-left:30px; opacity:1}
+      }
+      @keyframes animacion2 {
+        10%   {transform: rotate(-90deg); margin-right:0px; opacity:1}
+        40%   {transform: rotate(-180deg); margin-right:10px; opacity:0.2}
+          80% {transform: rotate(-270deg); margin-right:10px; opacity:0.5}
+        100% {transform: rotate(-360deg); margin-right:0px; opacity:1}
+      }
+
+
+    @keyframes animacion3{
+      0% {margin-left:0px}
+      50% {margin-top:500px}
+      100% {margin-left:0px}
     }
 
     .img1 {
@@ -141,12 +148,20 @@
       animation-duration: 6s;
       animation-iteration-count: infinite;
     }
-
     .img2 {
       animation-name: animacion2;/* Relaciona con @keyframes */
       animation-duration: 6s;
       animation-iteration-count: infinite;
     }
+
+
+    .img3 {
+      margin: 0px;
+      animation-name: animacion3;/* Relaciona con @keyframes */
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+    }
+
 
 
     </style>
@@ -212,6 +227,7 @@
                     </div>
                     <button type="submit" class="col-lg-12 col-md-12 col-sm-12 col-12 btn btn-success">Enviar</button>
                   </form>
+                          <img class="img3" src="profesor.jpg" alt="" width="250px">
               </div>
               <!-- El contenido será de tamaño 75% mientras que la resolución no sea xs que pasará a ocupar toda la pantalla -->
               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
@@ -237,6 +253,7 @@
                       <figure>
                         <img  class="img1" src="css3.svg" alt="logo css3">
                         <img class="img2" src="html5.svg" alt="logo html5">
+
                       </figure>
                   </article>
                   <article>
