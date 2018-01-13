@@ -105,19 +105,21 @@
       }
 
       input:focus{
-        -webkit-transform : scale(1.1);
-    }
-
+         -webkit-transform: scale(1.1);
+         -moz-transform: scale(1.1);
+         -ms-transform: scale(1.1);
+         transform: scale(1.1);
+       }
 
 .fa:hover{
         background-color: #28a745;
         border-radius: 5%;
         color:	#BDB76B;
-        -webkit-transition:     border-radius 3s linear 1s;
-        -moz-transition:     border-radius 3s;
-        -o-transition:     border-radius 3s;
-        -ms-transition:     border-radius 3s;
-        transition:     border-radius 3s;
+        -webkit-transition:    background-color 3s linear 1s;
+        -moz-transition:     background-color 3s;
+        -o-transition:     background-color 3s;
+        -ms-transition:    background-color 3s;
+        transition:     background-color 3s;
         /*transition: all 5s;*/
       }
 
