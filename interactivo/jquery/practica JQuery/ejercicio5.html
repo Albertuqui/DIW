@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+        $("img#balon").animate({left: '150px'});
+            $("img#balon").css('-webkit-transform','rotate('+90+'deg)');
+              $("img#balon").css('-moz-transform','rotate('+180+'deg)');
+              $("img#balon").css('transform','rotate('+360+'deg)');
+            });
+});
+
+</script>
+</head>
+<body>
+ <div class="contenedor">
+      <img id="porteria" src="porteria.jpg" width="250px" >
+    <img id="futbolista" src="jugador.jpg" style="margin-left:500px;"width="300px" >
+    <img id="balon" src="balon.png" width="50px"style="margin-top:200px;left:795px;position:absolute;" >
+    <button type="button" name="button">Marca gol</button>
+ </div>
+</body>
+</html>
