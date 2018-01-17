@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script>
+$(document).ready(function(){
+$("img").width(400);
+$(".contenedor").css("text-align","center");
+$("h1").css({"text-align":"center", "color":"blue"});
+
+$("img, button").hide();
+var booleano =true;
+
+
+$("h1").click(function(){
+  if(booleano==true){
+  $("h1").html("Haz click aquí para ocultar la imagen!");
+       $("img,button").toggle();
+       booleano=false;
+}else{
+  $("h1").html("Haz click aquí para desplegar la imagen!");
+       $("img,button").toggle();
+       booleano=true;
+}
+
+});
+
+$("button#masAncho").click(function(){
+  $("img").width($("img").width()*1.2);
+
+});
+
+$("button#menosAncho").click(function(){
+  $("img").width($("img").width()/1.2);
+
+});
+
+
+});
+</script>
+</head>
+<body>
+ <h1>Haz click aquí para desplegar la imagen!</h1>
+ <div class="contenedor">
+ <img src="mundo.jpg">
+ <button id="masAncho">+</button>
+ <button id="menosAncho">-</button>
+ </div>
+</body>
+</html>
