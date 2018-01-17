@@ -4,14 +4,14 @@
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
 <script>
 $(document).ready(function(){
+  $("img#balon").hide().fadeIn(3000);
+  $("img#balon").css("top","0");
+
   $("button").click(function(){
         $("img#balon").animate({left: '150px'});
-            $("img#balon").css('-webkit-transform','rotate('+90+'deg)');
-              $("img#balon").css('-moz-transform','rotate('+180+'deg)');
-              $("img#balon").css('transform','rotate('+360+'deg)');
-            });
+        $("img#porteria").animate({width:'300px'});
+  });
 });
-
 </script>
 </head>
 <body>
