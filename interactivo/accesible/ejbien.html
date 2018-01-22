@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Viajes viajaja</title>
+    <meta charset="utf-8">
+    <style media="screen">
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    html, body{
+      height: 100%;
+    }
+    body{
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: lightsalmon;
+    }
+    header{
+      background-color: lightblue;
+      display: table;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+    .logo{
+      display: table-cell;
+      vertical-align: middle;
+      width: 100px;
+    }
+    h1{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left;
+    }
+    .logo > img{
+      margin: 10px;
+      width: 80px;
+    }
+    .container{
+      padding-top: 150px;
+      flex:1;
+    }
+    nav{
+      background-color: lightgrey;
+      width: 100%;
+    }
+    nav ul > li{
+      display: inline-block;
+      padding: 10px;
+    }
+    footer{
+      background-color: lightblue;
+      height: 70px;
+    }
+    table,th, td{
+      border-collapse: collapse;
+      text-align: center;
+      border: solid black;
+    }
+    .container div{
+      width: 75%;
+      margin: auto;
+      text-align: left;
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
+    .container img{
+      width: 70%;
+      height: auto;
+      margin: 10px;
+    }
+    .ocultar {
+      position:absolute;
+      top:-100px;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="corporativo">
+        <div class="logo">
+          <img src="https://factoryfy.es/wp-content/uploads/diseno-logotipo-agencia-viajes-avion.jpg" alt="logotipo de la página">
+        </div>
+        <h1>Viajaja. Organizamos tu ocio</h1>
+      </div>
+      <div class="menu">
+        <h2 class="ocultar">Menú navegación</h2>
+        <nav>
+          <ul>
+            <li><a href="#">Actividades semanales</a></li>
+            <li><a href="#">Propuestas populares</a></li>
+            <li><a href="#">Contacta</a></li>
+            <li><a href="#">Páginas amigas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Esta semana te proponemos estas actividades</h2>
+      <p>En esta página todo el mundo habla muy raro...</p>
+      <div class="actividad1">
+        <h3>Clases de conversación de latin</h3>
+        <p lang="la">Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipisicing <em>elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <strong>laborum</strong>.</p>
+        <br>
+        <p>Podrás traducir el párrafo anterior y tal y como ves en la infografía, hablarás una lengua que sólo se habla en misa.</p>
+        <img src="https://trabajarporelmundo.org/wp-content/uploads/2015/08/infografia-lenguas-m%C3%A1s-hablada.jpg" alt="infografia" longdesc="Las lenguas más habladas son....(explicamos la infografía)">
+      </div>
+      <div class="actividad2">
+        <h3>Visita Florencia</h3>
+        <p lang="it">Penso che un sogno così non ritorni mai più, mi dipingevo le mani e la faccia di blu, poi d'improvviso venivo dal vento rapito, e incominciavo a volare nel cielo infinito. Volare oh oh cantare oh oh oh oh, nel blu dipinto di blu, felice di stare lassù, e volavo ...</p>
+        <img src="https://www.101viajes.com/sites/default/files/ponte-vecchio-guia.jpg" alt="Puente de Florencia">
+        <p>Si te interesa, consulta la tabla o pulsa en este <a href="https://www.101viajes.com/florencia/guia-turismo-viaje-florencia" title="Abre una nueva página a una nueva web sobre turismo en Florencia">enlace</a></p>
+        <table summary="Presupuesto estimado del viaje a Florencia en total y por días">
+          <tr>
+            <th>Duración del viaje</th>
+            <th>Coste por día</th>
+            <th>Coste total</th>
+          </tr>
+          <tr>
+            <td>3 días</td>
+            <td>80€</td>
+            <td>400€</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <h2 class="ocultar">Pie de la página con enlaces </h2>
+      <hr>
+      <p>Esto es el pie</p>
+      <a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Abre la página del nivel AA de conformidad. Todas las páginas del dominio han sido desarrolladas con las tecnologías XHTML 1.0, CSS 3.0 y Javascript 6.0, con fecha 18/1/2017 cumple las directrices 2.0 WCAG-WAI para obtener el nivel de conformidad Doble-A"><img src="http://www.w3.org/WAI/wcag2AA" alt="Icono de conformidad con el Nivel AA, de las Directrices de Accesibilidad para el Contenido Web 2.0 del W3C-WAI"/></a>
+    </footer>
+  </body>
+</html>
