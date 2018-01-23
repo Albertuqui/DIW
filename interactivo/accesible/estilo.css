@@ -152,6 +152,10 @@ img:nth-child(2) {
 	margin-left: 400px;
 }
 
+#logo a{
+	border-bottom: none;
+}
+
 th.titulo {
 	color:#af00d0;
 }
