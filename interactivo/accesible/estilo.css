@@ -141,3 +141,17 @@ img{
 strong{
 	font-weight: bold;
 }
+
+table, th {
+	border: 1px solid black;
+	width: 50%;
+	margin: auto;
+}
+img:nth-child(2) {
+	width:200px;
+	margin-left: 400px;
+}
+
+th.titulo {
+	color:#af00d0;
+}
