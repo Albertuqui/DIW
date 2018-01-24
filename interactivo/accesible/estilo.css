@@ -142,8 +142,8 @@ strong{
 	font-weight: bold;
 }
 
-table,th,td {
-	border: 1px solid #af00d0;
+table, tr{
+	border: 1px solid black;
 	width: 50%;
 	margin: auto;
 }
