@@ -142,8 +142,8 @@ strong{
 	font-weight: bold;
 }
 
-table, th {
-	border: 1px solid black;
+table,th,td {
+	border: 1px solid #af00d0;
 	width: 50%;
 	margin: auto;
 }
@@ -156,6 +156,6 @@ img:nth-child(2) {
 	border-bottom: none;
 }
 
-th.titulo {
+th {
 	color:#af00d0;
 }
