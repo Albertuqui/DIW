@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DIW Examen Bloque 3</title>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <style media="screen">
+      h1, h2, .contenido{
+        text-align: center;
+      }
+      .contenido{
+        margin-top: 50px;
+      }
+      img#logo{
+        width: 120px;
+        height: auto;
+        margin-left: 600px;
+      }
+      div > img{
+          width: 300px;
+          height: auto;
+          display: none;
+      }
+      p{
+        display: none;
+        font-size: 20px;
+      }
+      button{
+        border-radius: 0px;
+        border-color: steelblue;
+        border-width: 2px;
+        background-color: white;
+        color: steelblue;
+        width: 300px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        outline: none;
+      }
+      #botonera{
+        float:left;
+        width: 400px;
+      }
+
+      @keyframes animacion {
+        10%   {margin-right:0px;}
+        30%   {margin-left:400px;}
+        50%   {margin-right:0px;}
+        70%   {margin-left:200px;}
+        90%   {margin-right:0px;}
+        100%  {margin-left: 0px;}
+      }
+
+      #logo {
+        /*Podemos usar los prefijos -webkit- y -moz- */
+        animation-name: animacion;/* Relaciona con @keyframes */
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      button:hover{
+              border-radius: 15px;
+              border-color:	red;
+              -webkit-transition:     border-radius 2s;
+              -moz-transition:     border-radius 2s;
+              -o-transition:     border-radius 2s;
+              -ms-transition:     border-radius 2s;
+              transition:     border-radius 2s;
+            }
+
+
+    </style>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+        var booleano=true;
+        $("#formatos").click(function(){
+           if(booleano==true){
+          $(".formatos").css("display","block").slideToggle("slow");
+          $(".nube").css("display","none");
+            $(".seguridad").css("display","none");
+            booleano=false;
+          }else{
+            $(".formatos").slideToggle("slow");
+            booleano=true;
+          }
+          });
+
+
+        $("#nube").click(function(){
+               if(booleano==true){
+          $(".nube").css("display","block").slideToggle("slow");
+            $(".formatos").css("display","none");
+            $(".seguridad").css("display","none");
+            booleano=false;
+          }else{
+            $(".nube").slideToggle("slow");
+            booleano=true;
+          }
+        });
+
+        $("#seguridad").click(function(){
+          if(booleano==true){
+          $(".seguridad").css("display","block").slideToggle("slow");
+          $(".nube").css("display","none");
+            $(".formatos").css("display","none");
+            booleano=false;
+          }else{
+            $(".seguridad").slideToggle("slow");
+            booleano=true;
+          }
+        });
+
+    	});
+    </script>
+
+  </head>
+  <body>
+    <img id="logo" src="goku.png" alt="goku">
+    <h1>Servicios de almacenamiento Son Goku</h1>
+    <h2>¡Súbelo todo a la nube!</h2>
+    <div class="contenido">
+      <div id="botonera">
+        <button id="formatos">¿Qué puedo almacenar?</button>
+        <button id="nube">¿Dónde se almacena?</button>
+        <button id="seguridad">¿Están seguros mis ficheros?</button>
+      </div>
+      <div id="resultado">
+        <img class="formatos" src="formatos.jpg" alt="formatos">
+        <img class="nube" src="nube.jpg" alt="nube">
+        <img class="seguridad" src="seguridad.png" alt="seguridad">
+        <p class="formatos">Puedes almacenar y reproducir hasta 15 formatos de ficheros</p>
+        <p class="nube">Almacena tus archivos en la nube. Accesibles en cualquier lugar</p>
+        <p class="seguridad">Nuestros servicios de almacenamiento tienen todas las garantías de seguridad</p>
+      </div>
+    </div>
+  </body>
+</html>
