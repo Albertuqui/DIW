@@ -142,7 +142,7 @@ strong{
 	font-weight: bold;
 }
 
-table, th {
+table, tr{
 	border: 1px solid black;
 	width: 50%;
 	margin: auto;
@@ -152,6 +152,10 @@ img:nth-child(2) {
 	margin-left: 400px;
 }
 
-th.titulo {
+#logo a{
+	border-bottom: none;
+}
+
+th {
 	color:#af00d0;
 }

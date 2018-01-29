@@ -4,33 +4,7 @@
     <title>Recetas </title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="estilo.css">
-    <script type="text/javascript">
-      onload = function(){
-        //Inicialmente, ocultamos los contenidos excepto el de presentación
-            document.getElementById("presentacion").style.display = "none";
-        document.getElementById("primeros").style.display = "none";
-        document.getElementById("segundos").style.display = "none";
-        document.getElementById("postres").style.display = "none";
-        //seleccionamos los enlaces del menú de navegación y asociamos la función de visualización
-        var enlaces = document.querySelectorAll("#navegacion a, h3 a");
-        for (var i = 0; i < enlaces.length; i++) {
-          enlaces[i].onclick = visualiza;
-        }
-        function visualiza(e) {
-          //selecciona los div dentro de contenido
-          var losDiv = document.getElementById("contenido").getElementsByTagName("div");
-          //oculta los div
-          for(var i = 0; i < losDiv.length; i++){
-            losDiv[i].style.display = "none";
-          }
-          //muestra el div indicado
-          var clase = e.target.getAttribute("class");
-          document.getElementById(clase).style.display = "block";
-          // cancela el evento normal del enlace (equivale a e.preventDefault());
-          return false;
-        }
-      }
-    </script>
+
   </head>
   <body>
     <div id="titulo">
@@ -39,16 +13,16 @@
         <p>Como en casa en ningún sitio!</p>
       </div>
       <div id="logo">
-        <img src="logo.png" alt="logo de la página">
+        <a href="http://canalcocina.es/cocinero/dolores-valcarcel-la-abuela-lolita"><img src="logo.png" alt="logo de la página"></a>
       </div>
     </div>
     <h2 class="oculta">Menu navegación</h2>
     <div id="navegacion">
       <ul>
-	       <li><a href="#presentacion" class="presentacion">Presentación</a></li>
-	       <li><a href="#primeros" class="primeros">Primer plato</a></li>
-	       <li><a href="#segundos" class="segundos">Segundo plato</a></li>
-	       <li><a href="#postres" class="postres">Postre</a></li>
+	       <li><a href="ejercicio.html#presentacion" class="presentacion">Presentación</a></li>
+	       <li><a href="ejercicio.html#primeros" class="primeros">Primer plato</a></li>
+	       <li><a href="ejercicio.html#segundos" class="segundos">Segundo plato</a></li>
+	       <li><a href="ejercicio.html#postres" class="postres">Postre</a></li>
        </ul>
      </div>
 <!-- Inicio de contenido -->
@@ -62,32 +36,32 @@
     <th class="titulo"> Cantidad </th>
   </tr>
   <tr>
-    <th> Huevos </th>
-    <th> 6 </th>
+    <td> Huevos </td>
+    <td> 6 </td>
   </tr>
   <tr>
-    <th> Patatas </th>
-    <th> 3 </th>
+    <td> Patatas </td>
+    <td> 3 </td>
   </tr>
   <tr>
-    <th> Cebolla </th>
-    <th> 1 </th>
+    <td> Cebolla </td>
+    <td> 1 </td>
   </tr>
   <tr>
-    <th> Pimienta verde</th>
-    <th> 1 </th>
+    <td> Pimienta verde</td>
+    <td> 1 </td>
   </tr>
   <tr>
-    <th> Aceite de oliva</th>
-    <th> 2 vasos </th>
+    <td> Aceite de oliva</td>
+    <td> 2 vasos </td>
   </tr>
   <tr>
-    <th> Sal </th>
-    <th> 3 cucharadas </th>
+    <td> Sal </td>
+    <td> 3 cucharadas </td>
   </tr>
   <tr>
-    <th> Perejil </th>
-    <th> Una hoja </th>
+    <td> Perejil </td>
+    <td> Una hoja </td>
   </tr>
 </table> </br>
 
@@ -107,71 +81,11 @@ Separa los bordes, cubre la sartén con un plato de mayor diámetro que la sart�
 
 Échala de nuevo para que cuaje por el otro lado.</p>
 
+<iframe src="https://www.youtube.com/embed/J1nTwC7esUA" title="video preparación de cómo hacer la tortilla de patatas"  ></iframe>
 
-<iframe src="https://www.youtube.com/embed/J1nTwC7esUA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
-<div id="presentacion">
-  <h2 class="oculta">Página de presentación</h2>
-  <h3>Bienvenido a la web de recetas.</h3>
-  <p>
-    Esta es una web dedicada a las recetas que hemos tomado en casa toda la vida. Como decía mi abuela:
-    <span>Aprofita nen! Com es menja a casa no es menja enlloc!</span>
-  </p>
-  <p>
-    Pulsa sobre el tipo de receta que te interese y ponte <strong>manos a la obra!</strong>
-  </p>
-  <p>Bon Appetit!</p>
 
-  <h4><a href="#primeros" class="primeros">Entrantes y Primeros platos</a></h4>
-  Aperitivos, ensaladas, sopas y cremas.
 
-  <h4><a href="#segundos" class="segundos">Segundos: El plato fuerte!</a></h4>
-  Pasta, arroces, carnes y pescados.
-
-  <h4><a href="#postres" class="postres">Deja hueco para los Postres</a></h4>
-  Conoce las técnicas para cocinar los mejores postres caseros.
-</div>
-
-<div id="primeros">
-  <h2 class="oculta">Página de primeros platos</h2>
-<p>Entrantes y Primeros platos</p>
-<h3>Aperitivos, ensaladas, sopas y cremas.</h3>
-<ul>
-	<li><a href="tortilla.html">Tortilla de la abuela</a></li>
-  <li><a href="#">Sopa castellana</a></li>
-  <li><a href="#">Crema de calabaza</a></li>
-  <li><a href="#">Champiñones rellenos</a></li>
-  <li><a href="#">Ensalada de verano</a></li>
-  <li><a href="#">Ensalada de encurtidos</a></li>
-</ul>
-</div>
-
-<div id="segundos">
-  <h2 class="oculta">Página de segundos platos</h2>
-<p>Segundos: El plato fuerte!</p>
-<h3>Pasta, arroces, carnes y pescados.</h3>
-<ul>
-	<li><a href="#">Redondo de ternera con salsa de pimienta</a></li>
-  <li><a href="#">Merluza al vino</a></li>
-  <li><a href="#">Estofado de buey</a></li>
-  <li><a href="#">Tagliatelle a los 4 quesos</a></li>
-  <li><a href="#">Arroz del senyoret</a></li>
-  <li><a href="#">Arroz de verdura</a></li>
-</ul>
-</div>
-
-<div id="postres">
-  <h2 class="oculta">Página de postres</h2>
-<p>Deja hueco para los Postres</p>
-<h3>Conoce las técnicas para cocinar los mejores postres caseros.</h3>
-<ul>
-	<li><a href="#">Flan de café</a></li>
-  <li><a href="#">Tarta a los 3 chocolates</a></li>
-  <li><a href="#">Helado artesano</a></li>
-  <li><a href="#">Sorbete de sandía</a></li>
-</ul>
-</div>
-</div>
 <div id="lateral">
   <h2 class="oculta">Redes sociales</h2>
   <h3>Síguenos</h3>
@@ -190,9 +104,12 @@ Separa los bordes, cubre la sartén con un plato de mayor diámetro que la sart�
 </div>
 
 
+
 <div id="pie">
     <h2 class="oculta">Pie de la página con enlaces </h2>
 <ul>
+  <a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Abre la página del nivel AA de conformidad. Todas las páginas del dominio han sido desarrolladas con las tecnologías XHTML 1.0, CSS 3.0 y Javascript 6.0, con fecha 23/1/2018 cumple las directrices 2.0 WCAG-WAI para obtener el nivel de conformidad Doble-A"><img src="http://www.w3.org/WAI/wcag2AA" alt="Icono de conformidad con el Nivel AA, de las Directrices de Accesibilidad para el Contenido Web 2.0 del W3C-WAI"/></a>
+
   <!-- Aquí van los iconos de accesibilidad y la explicación sobre accesibilidad -->
 </ul>
 </div>
